@@ -1,6 +1,6 @@
 # images-bed
 
-词通 App 的动漫海报图床。图片按**动画工作室**归档，通过 jsDelivr 按 commit pin 引用。
+词通 App 的动漫海报图床。图片按**动画工作室**归档，通过 raw.githubusercontent.com 按 commit pin 引用。
 
 ## 目录约定
 
@@ -12,8 +12,9 @@ img/
 
 - 文件名保留作品原名（允许中文），URL 使用时做 percent-encoding。
 - App 端引用表：`wordapp/data/anime_img.json`，值形如
-  `https://cdn.jsdelivr.net/gh/jayz24017-code/images-bed@<commit>/img/<studio>/<name>`。
+  `https://raw.githubusercontent.com/jayz24017-code/images-bed/<commit>/img/<studio>/<name>`。
 - 移动/重命名图片后，必须同步改写引用并重新 pin 到新 commit，否则 App 海报会 404。
+- 仓库体积约 874MB，超过 jsDelivr 免费版 50MB 上限（会间歇 403），因此不使用 jsDelivr。
 
 ## 统计
 
